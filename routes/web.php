@@ -178,4 +178,8 @@ Route::get('/cek', 'DetailController@cek');
     Route::get('/changePassword','HomeController@showChangePasswordForm');
     Route::post('/changePassword','HomeController@changePassword')->name('changePassword');
 
+    Route::get('/changePasswordStaf','HomeController@showChangePasswordFormStaf');
+    Route::post('/changePasswordStaf','HomeController@changePassword')->name('changePasswordStaf');
+
+
 });

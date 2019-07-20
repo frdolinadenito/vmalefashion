@@ -32,6 +32,10 @@ class HomeController extends Controller
         return view('auth.changepassword');
     }
 
+    public function showChangePasswordFormStaf(){
+        return view('staf.gantiPassword');
+    }
+
     public function changePassword(Request $request){
         if (!(Hash::check($request->get('current-password'), Auth::user()->password))) {
             // The passwords matches
