@@ -90,11 +90,7 @@ class TransaksiController extends Controller
     }
 
 
-    // public function processForm() {
-    //     $id  = Input::get('tahun') ;
-        
-    //     return Redirect::to('pendapatanBulanan/'.$id) ;
-    // }
+   
 
     public function pendapatanBulanan(Request $request,$id)
     {
@@ -174,5 +170,5 @@ class TransaksiController extends Controller
         return $pdf->download('LaporanTahunan.pdf');
     }
 
-    //tessss///
+    
 }

@@ -15,10 +15,10 @@ class RekomendasiController extends Controller
         // $dataProduk = $this->getDataProduk();
 
         $client = new Client();
-        $url = $client->get('http://127.0.0.1:5000/');
-        $json_obj=$client->get('http://127.0.0.1:5000/')->getBody();
+        $url = $client->get('http://rekomendasi.vmalefashion.site/');
+        $json_obj=$client->get('http://rekomendasi.vmalefashion.site/')->getBody();
 
-        $json_result_encode=json_decode((string)$client->get('http://127.0.0.1:5000/')->getBody()->getContents(),true);
+        $json_result_encode=json_decode((string)$client->get('http://rekomendasi.vmalefashion.site/')->getBody()->getContents(),true);
 
         $match= array('['=> ' ', ']' => ' ', '{' => ' ', '}'=>'  ', '->' => 'maka akan dibeli ');
 
@@ -36,7 +36,7 @@ class RekomendasiController extends Controller
     public function getRekomendasi(){
     
         $client = new Client();
-        $response = $client->get('http://127.0.0.1:5000/');
+        $response = $client->get('http://rekomendasi.vmalefashion.site/');
 
         if ($response->getStatusCode() !== 200) {
             return response()->json(null, 500);

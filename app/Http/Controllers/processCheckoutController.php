@@ -67,56 +67,56 @@ class processCheckoutController extends Controller
 
         // //////////////delete////////////
         
-        // rekomendasi::truncate();
+         rekomendasi::truncate();
 
         // ///////////////////////////////
 
 
         // ///////////get//////////////////
 
-        // $client = new Client();
-        // $response = $client->get('http://127.0.0.1:5000/');
+        $client = new Client();
+        $response = $client->get('http://rekomendasi.vmalefashion.site/');
 
-        // if ($response->getStatusCode() !== 200) {
-        //     return response()->json(null, 500);
-        // }
+        if ($response->getStatusCode() !== 200) {
+            return response()->json(null, 500);
+        }
 
-        // $payload = json_decode((string) $response->getBody(), true)['message'];
-        // $payload = str_replace('[', '', $payload);
-        // $payload = str_replace(']', '', $payload);
+        $payload = json_decode((string) $response->getBody(), true)['message'];
+        $payload = str_replace('[', '', $payload);
+        $payload = str_replace(']', '', $payload);
 
-        // $data = collect(explode('}, {', $payload))
-        //     ->map(function ($item) {
-        //         $data = str_replace('{', '', $item);
-        //         $data = str_replace('}', '', $data);
-        //         $data = explode(' -> ', $data);
+        $data = collect(explode('}, {', $payload))
+            ->map(function ($item) {
+                $data = str_replace('{', '', $item);
+                $data = str_replace('}', '', $data);
+                $data = explode(' -> ', $data);
 
-        //         return [
-        //             0 => $data[0] ? explode(', ', $data[0]) : [],
-        //             1 => $data[1] ? explode(', ', $data[1]) : [],
-        //         ];
-        //     })
-        //     ->reduce(function ($carry, $item) {
-        //         $keys = collect($item[0]);
-        //         $values = collect($item[1]);
+                return [
+                    0 => $data[0] ? explode(', ', $data[0]) : [],
+                    1 => $data[1] ? explode(', ', $data[1]) : [],
+                ];
+            })
+            ->reduce(function ($carry, $item) {
+                $keys = collect($item[0]);
+                $values = collect($item[1]);
 
-        //         $keys->each(function ($key) use (&$carry, $values) {
-        //             $values->each(function ($value) use (&$carry, $key) {
-        //                 $carry->push([
-        //                     'sumber' => $key,
-        //                     'hasil' => $value,
-        //                     'created_at' => date('Y-m-d H:i:s'),
-        //                     'updated_at' => date('Y-m-d H:i:s'),
-        //                 ]);
-        //             });
-        //         });
+                $keys->each(function ($key) use (&$carry, $values) {
+                    $values->each(function ($value) use (&$carry, $key) {
+                        $carry->push([
+                            'sumber' => $key,
+                            'hasil' => $value,
+                            'created_at' => date('Y-m-d H:i:s'),
+                            'updated_at' => date('Y-m-d H:i:s'),
+                        ]);
+                    });
+                });
 
-        //         return $carry;
-        //     }, collect([]))
-        //     ->all();
+                return $carry;
+            }, collect([]))
+            ->all();
 
             
-        //  \App\rekomendasi::insert($data);
+         \App\rekomendasi::insert($data);
 
 
         /////////////////////////////////
