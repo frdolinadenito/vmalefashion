@@ -86,7 +86,7 @@ class TransaksiController extends Controller
             ->orderBy('transaksi.Tanggal_Pembelian', 'ASC')->get();
 
 
-        return view('Laporan.LaporanBulanan')->with('pendapatanBulanan_data', $pendapatanBulanan_data);
+        return view('laporan.LaporanBulanan')->with('pendapatanBulanan_data', $pendapatanBulanan_data);
     }
 
 
@@ -104,10 +104,10 @@ class TransaksiController extends Controller
             ->whereYear('transaksi.Tanggal_Pembelian', '=', $id)
             ->where('transaksi.Status_Pemesanan', '=', 'Selesai')
             ->groupBy (DB::raw('MONTHNAME(transaksi.Tanggal_Pembelian) '))  
-            ->orderBy (DB::raw('MONTH(transaksi.Tanggal_Pembelian)' ),'ASC') 
+            ->orderBy (DB::raw('MONTHNAME(transaksi.Tanggal_Pembelian)' ),'ASC') 
             ->get();
             $tahun = $id;
-        return view('Laporan.LaporanBulananProses', compact('pendapatanBulanan_data','tahun'));
+        return view('laporan.LaporanBulananProses', compact('pendapatanBulanan_data','tahun'));
     }
 
     public function Bulanan_pdf($id)
@@ -118,7 +118,7 @@ class TransaksiController extends Controller
             ->whereYear('transaksi.Tanggal_Pembelian', '=', $id)
             ->where('transaksi.Status_Pemesanan', '=', 'Selesai')
             ->groupBy (DB::raw('MONTHNAME(transaksi.Tanggal_Pembelian) '))  
-            ->orderBy (DB::raw('MONTH(transaksi.Tanggal_Pembelian)' ),'ASC') 
+            ->orderBy (DB::raw('MONTHNAME(transaksi.Tanggal_Pembelian)' ),'ASC') 
             ->get();
             $tahun = $id;
 
@@ -139,7 +139,7 @@ class TransaksiController extends Controller
         ->groupBy('transaksi.Tanggal_Pembelian')
         ->orderBy('transaksi.Tanggal_Pembelian', 'ASC')->get();
 
-        return view('Laporan.LaporanTahunan')->with('pendapatanTahunan_data', $pendapatanTahunan_data);
+        return view('laporan.LaporanTahunan')->with('pendapatanTahunan_data', $pendapatanTahunan_data);
     }
 
 
@@ -153,10 +153,10 @@ class TransaksiController extends Controller
         ->whereYear('transaksi.Tanggal_Pembelian', '=', $id)
         ->where('transaksi.Status_Pemesanan', '=', 'Selesai')
         ->groupBy(DB::raw('year(transaksi.Tanggal_Pembelian) '))
-        ->orderBy('transaksi.Tanggal_Pembelian', 'ASC')->get();
+        ->orderBy(DB::raw('year(transaksi.Tanggal_Pembelian) '), 'ASC')->get();
         $tahun = $id;
 
-        return view('Laporan.LaporanTahunanProses',compact('pendapatanTahunan_data','tahun'));
+        return view('laporan.LaporanTahunanProses',compact('pendapatanTahunan_data','tahun'));
     }
 
     public function Tahunan_pdf($id)
@@ -167,7 +167,7 @@ class TransaksiController extends Controller
         ->whereYear('transaksi.Tanggal_Pembelian', '=', $id)
         ->where('transaksi.Status_Pemesanan', '=', 'Selesai')
         ->groupBy(DB::raw('year(transaksi.Tanggal_Pembelian) '))
-        ->orderBy('transaksi.Tanggal_Pembelian', 'ASC')->get();
+        ->orderBy(DB::raw('year(transaksi.Tanggal_Pembelian) '), 'ASC')->get();
         $tahun = $id;
 
         $pdf = \PDF::loadView('laporan.cetakLaporanTahunan', compact('pendapatanTahunan_data', 'tahun'));
