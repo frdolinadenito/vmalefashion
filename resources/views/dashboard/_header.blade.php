@@ -89,7 +89,7 @@
                     <a href="{{ route('profil-pegawai') }}" class="btn btn-default btn-flat">Profil</a>
                   </div>
                   <div class="pull-right">
-                    <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); 
+                    <a class="btn btn-default btn-flat" href="{{ route('logout') }}" onclick="event.preventDefault(); 
                                           document.getElementById('logout-form').submit();">
                       {{ __('Keluar') }}
                     </a>
