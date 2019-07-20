@@ -89,11 +89,14 @@
                     <a href="{{ route('profil-pegawai') }}" class="btn btn-default btn-flat">Profil</a>
                   </div>
                   <div class="pull-right">
-                    <a href="{{ route('logout') }}" class="btn btn-default btn-flat">Keluar
-                       onclick="event.preventDefault(); 
-                           document.getElementById('logout-form').submit();">
-
+                    <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); 
+                                          document.getElementById('logout-form').submit();">
+                      {{ __('Keluar') }}
                     </a>
+
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                      @csrf
+                    </form>
                   </div>
                 </li>
               </ul>
@@ -152,7 +155,7 @@
               </ul>
             </li>
             <li><a href="{{ route('transaksi.index') }}"><i class="fa fa-money"></i> <span>Transaksi</span></a></li>
-            
+
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-thumbs-up"></i> <span>Rekomendasi</span>
@@ -161,7 +164,7 @@
               <ul class="treeview-menu">
                 <li><a href="{{ route('rekomendasiLama') }}"><i class=" fa fa-circle-o"></i> Rekomendasi Lama</a></li>
                 <li><a href="{{ route('tampilApriori') }}"><i class="fa fa-circle-o"></i> Rekomendasi baru</a></li>
-                
+
               </ul>
             </li>
 
@@ -173,7 +176,7 @@
               <ul class="treeview-menu">
                 <li><a href="{{ route('pegawai.index') }}"><i class=" fa fa-circle-o"></i> Daftar Pegawai</a></li>
                 <li><a href="{{ route('pegawai.create') }}"><i class="fa fa-circle-o"></i> Tambah Pegawai</a></li>
-                
+
               </ul>
             </li>
 
@@ -184,9 +187,9 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-               <li><a href="{{ route('LaporanBulanan') }}"><i class="fa fa-circle-o"></i> Laporan Pendapatan<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bulanan</a></li>
+                <li><a href="{{ route('LaporanBulanan') }}"><i class="fa fa-circle-o"></i> Laporan Pendapatan<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bulanan</a></li>
                 <li><a href="{{ route('LaporanTahunan') }}"><i class="fa fa-circle-o"></i> Laporan Pendapatan<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tahunan</a></li>
-               
+
               </ul>
             </li>
           <?php else : ?>
