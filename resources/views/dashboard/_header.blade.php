@@ -86,10 +86,14 @@
                 <!-- Menu Footer-->
                 <li class="user-footer">
                   <div class="pull-left">
-                    <a href="{{ route('profil-pegawai') }}" class="btn btn-default btn-flat">Profile</a>
+                    <a href="{{ route('profil-pegawai') }}" class="btn btn-default btn-flat">Profil</a>
                   </div>
                   <div class="pull-right">
-                    <a href="{{ route('index') }}" class="btn btn-default btn-flat">Sign out</a>
+                    <a href="{{ route('logout') }}" class="btn btn-default btn-flat">Keluar
+                       onclick="event.preventDefault(); 
+                           document.getElementById('logout-form').submit();">
+
+                    </a>
                   </div>
                 </li>
               </ul>
