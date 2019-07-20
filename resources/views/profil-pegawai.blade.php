@@ -74,7 +74,7 @@
                 <h3><strong>Kata Sandi</strong> </h3>
             </div>
             <div class="form-group col-md-1">
-                <a href="{{route('changePassword')}}" class="btn btn-warning btn-s"><i class="glyphicon glyphicon-chevron-left"></i>Ubah</a>
+                <a href="{{route('changePasswordStaf')}}" class="btn btn-warning btn-s"><i class="glyphicon glyphicon-chevron-left"></i>Ubah</a>
             </div>
 
         </div>
