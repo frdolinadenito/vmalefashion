@@ -139,7 +139,7 @@
 <script src="{{URL::asset('bootstrap/js/bootstrap.min.js')}}"></script>
 
 <!-- jQuery 2.2.3 -->
-<script src="{{URL::asset('public_html/plugins/jQuery/jquery-2.1.4.min.js')}}"></script>
+<script src="{{URL::asset('plugins/jQuery/jquery-2.1.4.min.js')}}" type="text/javascript"></script>
 
 <!-- Morris.js charts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
