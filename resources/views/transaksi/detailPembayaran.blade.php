@@ -39,7 +39,7 @@
 		</table>
 	</div>
 	<div class="col-md-6">
-		<?php echo '<img width="100%" class="img-responsive" src="{{ URL::to('/') }}/BuktiPembayaran/'.$pecah->Bukti_Pembayaran.'" alt="">' ?>
+		'<img width="100%" class="img-responsive" src="{{ URL::to('/') }}/BuktiPembayaran/'.{{ $pecah->Bukti_Pembayaran}}.'" alt="">
 	</div>
 </div>
 
