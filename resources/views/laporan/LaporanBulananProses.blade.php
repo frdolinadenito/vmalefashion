@@ -123,6 +123,10 @@
  
   <!-- /.box -->
 </section>
+<!-- Bootstrap 3.3.6 -->
+<script src="{{URL::asset('bootstrap/js/bootstrap.min.js')}}"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="{{URL::asset('bootstrap/js/bootstrap.min.js')}}"></script>
 <!-- SlimScroll -->
 <script src="{{URL::asset('plugins/slimScroll/jquery.slimScroll.min.js')}}"></script>
 
@@ -143,8 +147,7 @@
 <script src="{{URL::asset('plugins/fastclick/fastclick.js')}}"></script>
 <!-- AdminLTE App -->
 <script src="{{URL::asset('dist/js/app.min.js')}}"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="{{URL::asset('bootstrap/js/bootstrap.min.js')}}"></script>
+
 <!-- AdminLTE for demo purposes -->
 <script src="{{URL::asset('dist/js/demo.js')}}"></script>
 <!-- page script -->
