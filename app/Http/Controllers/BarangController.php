@@ -42,7 +42,7 @@ class BarangController extends Controller
             'gambar' => ['mimes: jpg,jpeg,JPEG,png,gif,bmp','max:2024'],
         ]);
         $gambar = $request->files->get('gambar')->getClientOriginalName();
-        $destination = base_path('../public_html/uploadImage/');
+        $destination = base_path('../../public_html/uploadImage/');
         $request->file('gambar')->move($destination,$gambar);
   
         barang::create([
