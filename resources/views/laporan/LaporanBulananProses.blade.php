@@ -11,6 +11,10 @@
     @endif
     @php $id=""; @endphp
 
+
+<!-- jQuery 2.2.3 -->
+<script type="text/javascript" src="{{URL::asset('plugins/jQuery/jquery-2.1.4.min.js')}}" ></script>
+
     <script>
     var e = document.getElementById("tahun");
     var strUser = e.options[e.selectedIndex].value;
@@ -124,8 +128,6 @@
   <!-- /.box -->
 </section>
 
-<!-- jQuery 2.2.3 -->
-<script src="{{URL::asset('plugins/jQuery/jquery-2.1.4.min.js')}}" type="text/javascript"></script>
 
 <!-- Bootstrap 3.3.6 -->
 <script src="{{URL::asset('bootstrap/js/bootstrap.min.js')}}"></script>
