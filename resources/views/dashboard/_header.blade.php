@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="{{URL::asset('bootstrap/css/bootstrap.min.css')}}">
 
 <!-- jQuery 2.2.3 -->
-<script src="{{URL::asset('plugins/jQuery/jquery-2.1.4.min.js')}}"></script>
+<script src="{{URL::asset('plugins/jQuery/jquery-2.1.4.min.js')}}" type="text/javascript"></script>
 
 
   <!-- Font Awesome -->
