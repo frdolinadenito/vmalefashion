@@ -170,7 +170,7 @@
                         </section>
                         @endforeach
                         <?php } ?>
-                        <?php if($alamat->isEmpty()) { ?>
+                        <?php if($alamats->isEmpty()) { ?>
                              
                         <section class="creditly-wrapper wrapper"> 
                            <div class="information-wrapper">
