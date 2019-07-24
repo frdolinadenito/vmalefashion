@@ -31,7 +31,7 @@ class PembayaranController extends Controller
         if($request->hasFile('Bukti_Pembayaran'))
       {
           $gambar = $request->file('Bukti_Pembayaran')->getClientOriginalName();
-          $destination = base_path('public/BuktiPembayaran/');
+          $destination = base_path('../../public_html/BuktiPembayaran/');
           $request->file('Bukti_Pembayaran')->move($destination,$gambar);
       }
 

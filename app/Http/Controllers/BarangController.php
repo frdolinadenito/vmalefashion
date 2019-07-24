@@ -72,7 +72,7 @@ class BarangController extends Controller
      if($request->hasFile('gambar'))
       {
           $gambar = $request->file('gambar')->getClientOriginalName();
-          $destination = base_path('public/uploadImage/');
+          $destination = base_path('../../public_html/uploadImage/');
           $request->file('gambar')->move($destination,$gambar);
       }
       else
