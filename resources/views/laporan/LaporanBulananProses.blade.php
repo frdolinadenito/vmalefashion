@@ -17,7 +17,7 @@
     alert("Value change to " + strUser );
   </script>
 
-<script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="{{URL::asset('plugins/jQuery/jquery-2.1.4.min.js')}}" type="text/javascript"></script>
   <script type="text/javascript">
     $(document).ready(function() {
       $('#tahun').change(function() {
@@ -138,7 +138,7 @@
 <script src="{{URL::asset('bootstrap/js/bootstrap.min.js')}}"></script>
 <!-- Morris.js charts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-<script src="{{URL::asset('plugins/morris/morris.min.js')}}"></script>
+<script src="{{URL::asset('../../public_html/plugins/morris/morris.min.js')}}"></script>
 <!-- FastClick -->
 <script src="{{URL::asset('plugins/fastclick/fastclick.js')}}"></script>
 <!-- AdminLTE App -->
