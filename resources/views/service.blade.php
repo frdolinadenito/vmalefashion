@@ -30,7 +30,7 @@
       <!--service -->
       <section class="service py-lg-4 py-md-3 py-sm-3 py-3">
          <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
-            <h3 class="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">Services</h3>
+            <h3 class="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">Layanan</h3>
             <div class="row text-center">
                <div class="col-lg-4 col-md-6 abut-gride">
                   <span class="fas fa-truck"></span>
