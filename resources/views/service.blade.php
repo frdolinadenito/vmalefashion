@@ -34,44 +34,28 @@
             <div class="row text-center">
                <div class="col-lg-4 col-md-6 abut-gride">
                   <span class="fas fa-truck"></span>
-                  <h5>Shipping</h5>
-                  <p class="mt-3"> velit sagittis vehicula. Duis posuere 
-                     ex in mollis iaculis. Suspendisse tincidunt
+                  <h5>Jasa Pengiriman</h5>
+                  <p class="mt-3"> Pengiriman cepat dan dapat dipantau secara langsung
                   </p>
                </div>
                <div class="col-lg-4 col-md-6 abut-gride">
                   <span class="fas fa-phone-volume"></span>  
-                  <h5>Support</h5>
-                  <p class="mt-3"> velit sagittis vehicula. Duis posuere 
-                     ex in mollis iaculis. Suspendisse tincidunt
+                  <h5>Layanan Telepon</h5>
+                  <p class="mt-3"> Menyediakan layanan telepon untuk pembeli
                   </p>
                </div>
-               <div class="col-lg-4 col-md-6 abut-gride">
-                  <span class="fas fa-undo"></span>
-                  <h5> Return</h5>
-                  <p class="mt-3"> velit sagittis vehicula. Duis posuere 
-                     ex in mollis iaculis. Suspendisse tincidunt
-                  </p>
-               </div>
+               
                <div class="col-lg-4 col-md-6 mt-lg-4 mt-3 abut-gride">
                   <span class="fas fa-money-bill-alt"></span>
-                  <h5>Online Cash</h5>
-                  <p class="mt-3"> velit sagittis vehicula. Duis posuere 
-                     ex in mollis iaculis. Suspendisse tincidunt
+                  <h5>Pembayaran Online</h5>
+                  <p class="mt-3"> Pembayaran dapat dilakukan dengan transfer lewat bank
                   </p>
                </div>
-               <div class="col-lg-4 col-md-6 mt-lg-4 mt-3 abut-gride">
-                  <span class="fas fa-exchange-alt"></span>
-                  <h5>Exchange</h5>
-                  <p class="mt-3"> velit sagittis vehicula. Duis posuere 
-                     ex in mollis iaculis. Suspendisse tincidunt
-                  </p>
-               </div>
+               
                <div class="col-lg-4 col-md-6 mt-lg-4 mt-3 abut-gride">
                   <span class="fas fa-thumbs-up"></span>
-                  <h5>Quality</h5>
-                  <p class="mt-3"> velit sagittis vehicula. Duis posuere 
-                     ex in mollis iaculis. Suspendisse tincidunt
+                  <h5>Berkualitas</h5>
+                  <p class="mt-3"> Barang berkualitas dengan harga terjangkau
                   </p>
                </div>
             </div>

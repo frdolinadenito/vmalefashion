@@ -62,8 +62,8 @@
                               <a class="nav-link" href="{{route('profil')}}">Akun</a>
                               @php $users1 = Auth::user()->id; @endphp
                               <a class="nav-link " href="{{route('riwayat',$users1)}}"}>Riwayat</a>
-                              <a class="nav-link " href="{{url('tracking')}}">Lacak Pengiriman</a>
-                              <a href="{{route('ongkir')}}" class="nav-link">Cek Ongkir</a>
+                              <!-- <a class="nav-link " href="{{url('tracking')}}">Lacak Pengiriman</a>
+                              <a href="{{route('ongkir')}}" class="nav-link">Cek Ongkir</a> -->
                     
                               <?php if (Auth::user()->ID_Peran == 2): ?>
                               <a class="nav-link" href="{{route('dashboard.create')}}"> Admin </a>

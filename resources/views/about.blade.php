@@ -30,9 +30,9 @@
       <!--About -->
       <section class="about py-lg-4 py-md-3 py-sm-3 py-3">
          <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
-            <h3 class="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">About Us</h3>
+            <h3 class="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">Tentang Kami</h3>
             <div class="about-innergrid-agile text-center">
-               <h4>Welcome To Our Store</h4>
+               <h4>Selamat datang di Vmale Fashion</h4>
                <p class="mb-3"> Vmale Fashion Indonesia merupakan yang terdepan dalam belanja fashion online, 
                   menyediakan brand lokal dan internasional yang terus bertambah untuk para konsumer di 
                   seluruh Indonesia. Kami memiliki banyak produk yang dapat memenuhi 
@@ -42,8 +42,7 @@
                </div>
             </div>
             <div class="about-sub-inner text-center mt-lg-4 mt-3">
-               <h4>A faster and better
-                  best to shop
+               <h4>Tempat tercepat dan terbaik untuk berbelanja
                </h4>
                <div class="row">
                   <div class="col-lg-4 col-md-4 abut-gride">
