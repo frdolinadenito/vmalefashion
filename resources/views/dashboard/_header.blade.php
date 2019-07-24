@@ -9,11 +9,6 @@
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.5 -->
   <link rel="stylesheet" href="{{URL::asset('bootstrap/css/bootstrap.min.css')}}">
-
-<!-- jQuery 2.2.3 -->
-<script src="{{URL::asset('plugins/jQuery/jquery-2.1.4.min.js')}}" type="text/javascript"></script>
-
-
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <!-- Ionicons -->
