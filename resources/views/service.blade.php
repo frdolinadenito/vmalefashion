@@ -45,7 +45,7 @@
                   </p>
                </div>
                
-               <div class="col-lg-4 col-md-6 mt-lg-4 mt-3 abut-gride">
+               <div class="col-lg-4 col-md-6 abut-gride">
                   <span class="fas fa-money-bill-alt"></span>
                   <h5>Pembayaran Online</h5>
                   <p class="mt-3"> Pembayaran dapat dilakukan dengan transfer lewat bank
