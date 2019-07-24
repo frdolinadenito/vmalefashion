@@ -173,7 +173,7 @@
               {{ method_field('post') }}
 
               <label>Opsi Pengiriman</label>
-              <select id="jasa" class="form-control" name="jasa">
+              <select id="jasa" class="form-control" name="jasa" required>>
 
                 <option selected="selected" value="">Pilih Opsi</option>
                 <?php for ($i = 0; $i < count($array_result["rajaongkir"]["results"][0]["costs"]); $i++) { ?>

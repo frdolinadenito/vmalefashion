@@ -229,7 +229,7 @@
 
                                           <div class="form-group">
                                              <label>Tujuan(Kota/Kabupaten)</label>
-                                             <select id="destination" class="form-control" name="destination">
+                                             <select id="destination" class="form-control" name="destination" required>>
                                                 <option selected="selected" value="">Pilih Tujuan</option>
                                                 @foreach($city as $c)
                                                 <option value="{{ $c->id }}">{{ $c->name }}</option>
@@ -240,7 +240,7 @@
 
                                           <div class="form-group">
                                              <label>Jasa</label>
-                                             <select id="jasa" class="form-control" name="jasa">
+                                             <select id="jasa" class="form-control" name="jasa" required>>
                                                 <option selected="selected" value="">Pilih Jasa</option>
 
                                                 <option value="jne">JNE</option>
