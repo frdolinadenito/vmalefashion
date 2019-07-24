@@ -128,8 +128,8 @@
 
 <!-- Datatables Js -->
 
-<script src="{{URL::asset('plugins/datatables/jquery.dataTables.js')}}"></script>
-<script src="{{URL::asset('plugins/datatables/dataTables.bootstrap.js')}}"></script>
+<script src="{{URL::asset('public_html/plugins/datatables/jquery.dataTables.js')}}"></script>
+<script src="{{URL::asset('public_html/plugins/datatables/dataTables.bootstrap.js')}}"></script>
 
 
 <!-- jQuery 2.2.3 -->
