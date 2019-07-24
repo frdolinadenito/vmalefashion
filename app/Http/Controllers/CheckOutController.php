@@ -28,7 +28,7 @@ class CheckOutController extends Controller
         $city = city::get();
 
         $idUser = Auth::user()->id;
-        $idAlamat = detil_pengguna::where('ID_Pengguna','=', $idUser)->get();
+        $idAlamat = detil_pengguna::where('ID_Pengguna','=', $idUser)->latest()->first();
         $alamats = detil_pengguna::where('ID_Pengguna','=', null)->get();
 
         
