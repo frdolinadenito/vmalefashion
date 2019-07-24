@@ -110,7 +110,7 @@
 
 
 <!-- jQuery 2.2.3 -->
-<script src="{{URL::asset('plugins/jQuery/jquery-2.1.4.min.js')}}"></script>
+<script src="{{URL::asset('plugins/jQuery/jQuery-2.1.4.min.js')}}"></script>
 <!-- Bootstrap 3.3.6 -->
 <script src="{{URL::asset('bootstrap/js/bootstrap.min.js')}}"></script>
 <!-- Morris.js charts -->
