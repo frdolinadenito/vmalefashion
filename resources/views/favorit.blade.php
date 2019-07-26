@@ -78,16 +78,9 @@
  
         </tbody>
         <tfoot>
-        <tr class="visible-xs">
-            <td colspan="4" class="hidden-xs"></td>
-            <td class="text-center"><strong>Total :RP <?php echo number_format( $total); ?>,00</strong></td>
-            
-        </tr>
+        
         <tr>
             <td><a href="{{ url('/') }}" class="btn btn-warning"><i class="fa fa-angle-left"></i> Lanjutkan Belanja</a></td>
-            
-            
-            
         </tr>
         </tfoot>
         </table>
