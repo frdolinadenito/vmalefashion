@@ -26,7 +26,6 @@
         <tr>
             <th style="width:40%">Produk</th>
             <th style="width:10%">Harga</th>
-            <th style="width:5%" class="text-center">Jumlah</th>
             <th style="width:5%" class="text-center">Berat(Gram)</th>
             <th style="width:22%" class="text-center">Subtotal</th>
             <th style="width:5%">Aksi</th>
