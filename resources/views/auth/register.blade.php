@@ -98,7 +98,7 @@
                         <label for="inputTgl">Tanggal Lahir</label>
                      </div>
                      <div class="form-group col-md-8">
-                        <input type="date" name="tanggalLahir" class="form-control" id="inputTgl" placeholder="">
+                        <input type="date" name="tanggalLahir" class="form-control" id="inputTgl" placeholder="" required>
                      </div>
                </div>
 
@@ -107,7 +107,8 @@
                         <label for="jenisKelamin">Jenis Kelamin</label>
                      </div>
                      <div class="form-group col-md-8">
-                        <select name="jenisKelamin" id="" class="form-control">
+                        <select name="jenisKelamin" id="" class="form-control" required>
+                        <option selected="" disabled ="" value="">Pilih Jenis Kelamin</option>
                         <option value="Laki-laki">Laki-laki</option>
                         <option value="Perempuan">Perempuan</option>
                         </select>
