@@ -51,7 +51,6 @@
                         </div>
                     </td>
                     <td data-th="Price">Rp <?php echo number_format($details['Harga_Barang']); ?>,00</td>
-                    <td data-th="Quantity"><?php echo $details['quantity'] ?></td>
                     <td data-th="Weight"><?php echo $details['Berat'] ?></td>
                     
                     <td data-th="Subtotal" class="text-center">Rp <?php echo number_format($details['Harga_Barang'] * $details['quantity']); ?>,00</td>
