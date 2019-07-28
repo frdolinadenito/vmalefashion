@@ -19,10 +19,10 @@
          <div class="inner_breadcrumb  ml-4">
             <ul class="short_ls">
                <li>
-                  <a href="{{route('index')}}">Home</a>
+                  <a href="{{route('index')}}">Beranda</a>
                   <span>/ /</span>
                </li>
-               <li>Service</li>
+               <li>Layanan</li>
             </ul>
          </div>
       </div>

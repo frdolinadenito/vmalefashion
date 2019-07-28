@@ -36,7 +36,7 @@
                <div class="col-lg-5 col-md-6 search-right">
                   <form class="form-inline my-lg-0"  action="{{ route('index') }}" method="get">
                      <input class="form-control mr-sm-2" type="text" name="search" type="search" placeholder="Pencarian">
-                     <button class="btn" type="submit">Search</button>
+                     <button class="btn" type="submit">Cari</button>
                   </form>
                </div>
                
